@@ -1,0 +1,28 @@
+/*
+@Thavi021
+Semester1 test 2018
+ */
+package cas12018test;
+import java.util.Scanner;
+
+public class CaS12018Test {
+
+
+    public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            String strPName;
+            double dblThisPrice;
+            
+            System.out.print("Please enter the product name: ");
+            strPName = sc.nextLine();
+            
+            System.out.print("Please enter the product price: R");
+            dblThisPrice = sc.nextDouble();
+            
+            Products p1 = new Products(strPName);
+            
+            System.out.println("Product Name: \t " + p1.ProductName());
+            System.out.println("Product Price: \t " + p1.CalcPrice(dblThisPrice));
+    }
+    
+}
